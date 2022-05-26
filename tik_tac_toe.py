@@ -16,7 +16,7 @@ def Board():
 
 
 total_turn = 10
-def chechwin():
+def checkwin():
     wins = [[a,b,c],[d,e,f],[g,h,i],[a,d,g,],[b,e,h],[c,f,i],[a,e,i],[g,e,c]]
 
     for win in wins :
@@ -37,7 +37,7 @@ while total_turn > 0:
     Board()
     if total_turn >1:
         if turn == 1 :
-            x= input("X's turn enter any alphabatical position: ")
+            x= input("X's turn enter any alphabetical position: ")
             
             if x == "a":
                  a= "X"
@@ -59,7 +59,7 @@ while total_turn > 0:
                  i= "X"
 
         elif turn == 0:
-            o = input("O's turn enter any alphabatical position: ") 
+            o = input("O's turn enter any alphabetical position: ") 
      
             if o == "a":
                  a= "O"
@@ -81,10 +81,10 @@ while total_turn > 0:
                  i= "O"
 
 
-    if chechwin() == 1 or chechwin() == 0:
+    if checkwin() == 1 or checkwin() == 0:
      
          break
-#     if chechwin !=1 and chechwin()!=0:
+#     if checkwin !=1 and checkwin()!=0:
 #           print('match tie')
 
          
